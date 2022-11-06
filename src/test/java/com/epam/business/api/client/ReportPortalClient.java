@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ReportPortalClient {
 
-    ProjectConfig config = ProjectConfig.config;
+    private final ProjectConfig config = ProjectConfig.config;
 
     public RequestSpecification setup() {
         return RestAssured

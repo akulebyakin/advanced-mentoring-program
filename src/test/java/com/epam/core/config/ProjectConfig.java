@@ -17,6 +17,9 @@ public interface ProjectConfig extends Config {
     @Key("${env}.token")
     String token();
 
+    @Key("browser.name")
+    String browserName();
+
     ProjectConfig config = ConfigFactory
             .create(ProjectConfig.class,
                     System.getProperties(),
